@@ -4,7 +4,7 @@ A responsive, high-performance C++ firmware for the ESP32 that visualizes MIDI C
 
 ---
 
-## 🌟 Features
+## Features
 
 *   **MIDI Clock Sync**: Synchronizes animation directly with standard MIDI clock ticks (24 PPQ).
 *   **Ultra-Smooth Motion**: Uses sub-tick time interpolation (with exponential moving average filtering) to continuously compute fractional comet positions between physical MIDI clocks, rendering at a smooth 60 FPS.
@@ -20,7 +20,7 @@ A responsive, high-performance C++ firmware for the ESP32 that visualizes MIDI C
 
 ---
 
-## 📁 Project Directory Structure
+## Project Directory Structure
 
 *   [src/main.cpp](file:///Users/james/projects/midi_comet/src/main.cpp): Core visualizer firmware, MIDI callback registrations, time interpolation, and LED rendering loops.
 *   [include/constants.h](file:///Users/james/projects/midi_comet/include/constants.h): User configuration file. Defines pins, LED strip counts, colors, decay rates, and toggles for stretch goal features.
@@ -29,7 +29,7 @@ A responsive, high-performance C++ firmware for the ESP32 that visualizes MIDI C
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Hardware Assembly
 Assemble your circuit on a breadboard. Refer to [HARDWARE.md](file:///Users/james/projects/midi_comet/HARDWARE.md) for step-by-step guides.
@@ -56,8 +56,8 @@ To upload the compiled binary to your connected ESP32:
 /Users/james/.platformio/penv/bin/pio run -t upload
 ```
 
-### 4. Play Music!
-Connect your MIDI source (DAW, sequencer, or hardware controller) sending MIDI clock and notes. Watch the strip ignite in sync with your tracks!
+### 4. Play Music
+Connect your MIDI source (DAW, sequencer, or hardware controller) sending MIDI clock and notes. Watch the strip ignite in sync with your tracks.
 If `DEBUG_MODE` is enabled, open the Serial Monitor at **115200 baud** to view real-time timing reports:
 ```text
 MIDI Clock LED Comet Visualizer Initiated.
